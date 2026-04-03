@@ -1,0 +1,20 @@
+{
+    "name": "com.firealt.performance-monitors",
+    "version": "4.0.0",
+    "displayName": "FireAlt Performance Monitors",
+    "description": "Based on Graphy by Martin Pane, Performance Monitors provides an extendable framework for any kind of performance monitors in game. Stats monitor and debugger for your Unity project.",
+    "unity": "6000.3",
+    "license": "MIT",
+    "keywords": [
+        "fps",
+        "counter",
+        "performance",
+        "debugger",
+        "graphy"
+    ],
+  "author": {
+    "name": "FireAlt",
+    "email": "krasutskimaksim@gmail.com",
+    "url": "https://github.com/Fire-Aalt"
+  }
+}

@@ -1,0 +1,28 @@
+{
+    "name": "Tayx.Graphy",
+    "rootNamespace": "",
+    "references": [
+        "Unity.InputSystem",
+        "Unity.TextMeshPro"
+    ],
+    "includePlatforms": [],
+    "excludePlatforms": [],
+    "allowUnsafeCode": false,
+    "overrideReferences": false,
+    "precompiledReferences": [],
+    "autoReferenced": true,
+    "defineConstraints": [],
+    "versionDefines": [
+        {
+            "name": "com.unity.inputsystem",
+            "expression": "",
+            "define": "GRAPHY_NEW_INPUT"
+        },
+        {
+            "name": "com.unity.modules.xr",
+            "expression": "",
+            "define": "GRAPHY_XR"
+        }
+    ],
+    "noEngineReferences": false
+}

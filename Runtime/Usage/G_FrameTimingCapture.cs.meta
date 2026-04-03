@@ -1,0 +1,19 @@
+fileFormatVersion: 2
+guid: 3b6d9f11f63e4486a8577d314bcc6ce2
+timeCreated: 1775097600
+licenseType: Store
+MonoImporter:
+  serializedVersion: 2
+  defaultReferences: []
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 105778
+  packageName: '[Graphy] - Ultimate FPS Counter - Stats Monitor & Debugger'
+  packageVersion: 3.0.5
+  assetPath: Assets/Graphy - Ultimate Stats Monitor/Runtime/Usage/G_FrameTimingCapture.cs
+  uploadId: 626547
