@@ -24,6 +24,11 @@ namespace Tayx.Graphy.Usage
                 usageMs = Application.isMobilePlatform
                     ? cpuRenderThreadFrameTimeMs
                     : gpuFrameTimeMs;
+
+                if (usageMs < AverageValue / 2f)
+                {
+                    return false;
+                }
                 
                 return true;
             }
