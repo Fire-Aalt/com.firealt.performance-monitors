@@ -17,6 +17,9 @@ namespace Tayx.Graphy.Usage
 {
     public class G_GpuUsageMonitor : G_StatUsageMonitor
     {
+        private const int MAX_DROPPED_FRAMES = 50;
+        private int _droppedFrames;
+        
         protected override bool TryGetUsage(out float usageMs)
         {
             if (G_FrameTimingCapture.TryGetLatestTimings(out _, out var cpuRenderThreadFrameTimeMs, out var gpuFrameTimeMs))
@@ -25,11 +28,17 @@ namespace Tayx.Graphy.Usage
                     ? cpuRenderThreadFrameTimeMs
                     : gpuFrameTimeMs;
 
-                if (usageMs < AverageValue / 2f)
+                if (usageMs < AverageValue / 2f && _droppedFrames < MAX_DROPPED_FRAMES)
                 {
-                    return false;
+                    _droppedFrames++;
+                    if (_droppedFrames < MAX_DROPPED_FRAMES)
+                    {
+                        return false;
+                    }
+                    _droppedFrames *= 2;
                 }
-                
+
+                _droppedFrames--;
                 return true;
             }
 
