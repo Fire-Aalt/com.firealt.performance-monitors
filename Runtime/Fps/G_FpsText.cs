@@ -14,7 +14,6 @@
 using Tayx.Graphy.Utils.NumString;
 using TMPro;
 using UnityEngine;
-using UnityEngine.UI;
 
 namespace Tayx.Graphy.Fps
 {
